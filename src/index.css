@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .bg-gradient {
+    @apply bg-gradient-to-t from-white to-amber-500;
+  }
+}
