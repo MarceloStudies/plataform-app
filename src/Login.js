@@ -51,7 +51,7 @@ export default function Login() {
                 </a>
               </div>
               <div className="flex flex-col w-full justify-end items-center gap-4">
-                <button className="w-full h-12 rounded-lg border-2 border-white focus:outline-none pointer-events-auto hover:bg-orange-300 hover:text-orange-500 focus:border-secondary px-4 bg-secondary text-white font-bold">
+                <button className="w-full h-12 rounded-lg shadow-sm focus:outline-none pointer-events-auto hover:bg-orange-300 hover:text-orange-500 focus:border-secondary px-4 bg-secondary text-white font-bold">
                   Entrar
                 </button>
                 <GoogleOAuthProvider clientId="453997831134-705bsj7ro2do4sbcvupsi94h73tg9qi4.apps.googleusercontent.com">
