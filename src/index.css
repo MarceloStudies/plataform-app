@@ -18,6 +18,10 @@
   .bg-gradient {
     @apply bg-gradient-to-t from-white to-amber-500;
   }
+
+  .bgDark-gradient {
+    @apply bg-gradient-to-t from-bgDark_primary to-amber-500;
+  }
 }
 
 @layer utilities{

@@ -7,13 +7,13 @@ export default function RegisterCard() {
 
   return (
     <div className="flex flex-col w-full h-3/4 justify-center items-center gap-4">
-      <div className="flex flex-col w-full h-1/2 justify-center items-center gap-6 ">
+      <div className="flex flex-col w-full h-1/2 justify-center items-center gap-6  dark:text-white ">
         <div className="flex flex-col w-full gap-1">
           <label for="emailRegister" className=" self-start ">
             Digite um e-email válido:
           </label>
           <input
-            className="w-full h-12 rounded-md border border-gray-400 focus:outline-none focus:border-secondary px-4"
+            className="dark:bg-transparent w-full h-12 rounded-md border border-gray-400 focus:outline-none focus:border-secondary px-4"
             type="text"
             placeholder="E-mail"
             id="emailRegister"
@@ -24,7 +24,7 @@ export default function RegisterCard() {
             Digite uma senha:
           </label>
           <input
-            className="w-full h-12 rounded-md border border-gray-400 focus:outline-none focus:border-secondary px-4"
+            className="dark:bg-transparent w-full h-12 rounded-md border border-gray-400 focus:outline-none focus:border-secondary px-4"
             type="password"
             placeholder="Senha"
             onChange={(e) => setPassword(e.target.value)}
@@ -33,7 +33,7 @@ export default function RegisterCard() {
             Confirme sua senha:
           </label>
           <input
-            className="w-full h-12 rounded-md border border-gray-400 focus:outline-none focus:border-secondary px-4"
+            className="dark:bg-transparent w-full h-12 rounded-md border border-gray-400 focus:outline-none focus:border-secondary px-4"
             type="password"
             placeholder="Confimação de senha"
             onChange={(e) => setPasswordAgain(e.target.value)}
@@ -46,6 +46,8 @@ export default function RegisterCard() {
             onChange={(isValid) => {
               if (isValid) {
                 document.getElementById("register").hidden = false;
+              }else{
+                document.getElementById("register").hidden = true;
               }
             }}
             messages={{
@@ -74,7 +76,7 @@ export default function RegisterCard() {
           <button
             hidden
             id="register"
-            className="w-3/5 h-12 rounded-lg shadow-sm focus:outline-none pointer-events-auto hover:bg-orange-300 hover:text-orange-500 focus:border-secondary px-4 bg-secondary text-white font-bold"
+            className="w-3/5 h-12 rounded-lg shadow-sm focus:outline-none pointer-events-auto hover:bg-orange-300 hover:text-orange-500 focus:border-secondary px-4 bg-secondary text-white dark:text-gray-700 dark:hover:bg-gray-900 dark:hover:text-amber-500 font-bold"
           >
             Enviar
           </button>

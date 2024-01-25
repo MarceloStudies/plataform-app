@@ -12,11 +12,11 @@ export function ButtonGoogleLogin() {
     };
   
     return (
-      <div>
+      <div >
         <GoogleLogin
+          className="w-full h-12 rounded-lg shadow-sm focus:outline-none pointer-events-auto hover:bg-orange-300 hover:text-orange-500 focus:border-secondary px-4 bg-secondary text-white font-bold dark:text-gray-700 dark:hover:bg-gray-900 dark:hover:text-amber-500 "
           onSuccess={handleSuccess}
           onError={handleError}
-          // Optionally, you can customize the button appearance and behavior
         />
       </div>
     );
