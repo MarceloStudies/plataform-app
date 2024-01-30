@@ -17,7 +17,7 @@ export default function Navbar() {
         <button
           data-tooltip-target="tooltip-home"
           type="button"
-          className="inline-flex flex-col items-center justify-center px-5 rounded-s-full lg:rounded-t-full   hover:bg-gray-50 dark:hover:bg-gray-800 group"
+          className="inline-flex flex-col items-center justify-center px-5 rounded-s-full lg:rounded-none  hover:lg:rounded-t-full  hover:bg-gray-50 dark:hover:bg-gray-800 group"
         >
           <svg
             className="w-5 h-5 mb-1 text-gray-500 dark:text-gray-400 group-hover:text-amber-600 dark:group-hover:text-amber-500"
@@ -130,7 +130,7 @@ export default function Navbar() {
         <button
           data-tooltip-target="tooltip-profile"
           type="button"
-          className="inline-flex flex-col items-center justify-center px-5 rounded-e-full lg:rounded-full  hover:bg-gray-50 dark:hover:bg-gray-800 group"
+          className="inline-flex flex-col items-center justify-center px-5 rounded-e-full lg:rounded-none hover:lg:rounded-b-full  hover:bg-gray-50 dark:hover:bg-gray-800 group"
         >
           <svg
             className="w-5 h-5 mb-1 text-gray-500 dark:text-gray-400 group-hover:text-amber-600 dark:group-hover:text-amber-500"
