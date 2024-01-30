@@ -1,5 +1,5 @@
-import LoginCard from "./LoginCard";
-import RegisterCard from "./RegisterCard";
+import LoginCard from "../components/login/LoginCard";
+import RegisterCard from "../components/login/RegisterCard";
 
 
 
