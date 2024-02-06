@@ -1,5 +1,6 @@
 import CardCategoryFood from "../components/carroussel/CarrousselHorizontal";
 import TablesFoods from "../components/table/TablesFoods";
+import CardFoodInfo from "../components/card/CardFoodInfo";
 
 export default function Home() {
   return (
@@ -10,8 +11,8 @@ export default function Home() {
           <div id="table" className="col-span-3 row-span-2 self-start ">
             <TablesFoods />
           </div>
-            <div className="col-span-1 row-span-2 bg-red-300">
-
+            <div className="col-span-1 row-span-2">
+              <CardFoodInfo/>
             </div>
         </div>
       </div>
