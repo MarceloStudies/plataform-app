@@ -1,7 +1,7 @@
 export default function TablesFoods() {
   return (
-    <div className="relative overflow-x-hidden shadow-lg sm:rounded-lg">
-      <div className="flex items-center justify-end flex-column flex-wrap md:flex-row space-y-4 md:space-y-0 pb-4 bg-white p-2 dark:bg-gray-900">
+    <div className="relative overflow-x-hidden  sm:rounded-lg">
+      <div className="flex items-center justify-end flex-column flex-wrap md:flex-row space-y-4 md:space-y-0 pb-4  p-2 dark:bg-gray-900">
         <label for="table-search" className="sr-only">
           Search
         </label>
@@ -30,8 +30,8 @@ export default function TablesFoods() {
           />
         </div>
       </div>
-      <table className="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
-        <thead className="text-xs text-gray-700 uppercase bg-slate-100 dark:bg-gray-700 dark:text-gray-400 rounded-lg">
+      <table className="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400 shadow-lg">
+        <thead className="text-xs text-gray-700 uppercase bg-slate-200 dark:bg-gray-700 dark:text-gray-400 rounded-lg">
           <tr>
             <th scope="col" className="p-4"></th>
             <th scope="col" className="px-6 py-3">
@@ -46,7 +46,69 @@ export default function TablesFoods() {
           </tr>
         </thead>
         <tbody>
-          <tr className="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600 cursor-pointer">
+          <tr className="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-200 dark:hover:bg-gray-600 cursor-pointer">
+            <td className="w-4 p-4">
+              <div className="flex items-center">
+              <img
+                className="w-10 h-10 rounded-full"
+                src="https://img.freepik.com/fotos-premium/brocolis-isolado-em-um-fundo-branco_120872-31309.jpg"
+                alt="Brocólis"
+              />
+              </div>
+            </td>
+            <th
+              scope="row"
+              className="flex items-center px-6 py-4 text-gray-900 whitespace-nowrap dark:text-white"
+            >
+             
+              <div className="">
+                <div className="text-base font-semibold">Brocólis </div>
+                <div className="font-normal text-gray-500">
+                  Brócolis
+                </div>
+              </div>
+            </th>
+            <td className="px-6 py-4">Verduras</td>
+            <td className="px-6 py-4">
+              <div className="flex items-center">
+                <div className="h-2.5 w-2.5 rounded-full bg-green-500 me-2"></div>{" "}
+                Finalizado
+              </div>
+            </td>
+            
+          </tr>
+          <tr className="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-200 dark:hover:bg-gray-600 cursor-pointer">
+            <td className="w-4 p-4">
+              <div className="flex items-center">
+              <img
+                className="w-10 h-10 rounded-full"
+                src="https://img.freepik.com/fotos-premium/brocolis-isolado-em-um-fundo-branco_120872-31309.jpg"
+                alt="Brocólis"
+              />
+              </div>
+            </td>
+            <th
+              scope="row"
+              className="flex items-center px-6 py-4 text-gray-900 whitespace-nowrap dark:text-white"
+            >
+             
+              <div className="">
+                <div className="text-base font-semibold">Brocólis </div>
+                <div className="font-normal text-gray-500">
+                  Brócolis
+                </div>
+              </div>
+            </th>
+            <td className="px-6 py-4">Verduras</td>
+            <td className="px-6 py-4">
+              <div className="flex items-center">
+                <div className="h-2.5 w-2.5 rounded-full bg-green-500 me-2"></div>{" "}
+                Finalizado
+              </div>
+            </td>
+            
+          </tr>
+          <tr className="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-200 dark:hover:bg-gray-600 cursor-pointer">
             <td className="w-4 p-4">
               <div className="flex items-center">
               <img

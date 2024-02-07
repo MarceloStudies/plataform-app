@@ -23,8 +23,12 @@ export default function CarrousselHorizontal() {
         spaceBetween={60}
         pagination={{ clickable: true }}
         breakpoints={{
+          320: {
+            slidesPerView: 2.2,
+            spaceBetween: 20,
+          },
           640: {
-            slidesPerView: 1,
+            slidesPerView: 3.5,
             spaceBetween: 20,
           },
           768: {

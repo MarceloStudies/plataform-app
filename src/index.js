@@ -2,7 +2,7 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import "./styles/index.css";
 import Login from "./pages/Login";
-import Home from "./pages/Home";
+import ItemCollection from "./pages/ItemCollection";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import NavigationBar from './components/navbar/NavigationBar';
 
@@ -21,8 +21,8 @@ const router = createBrowserRouter([
     element: <Login param="register"/>,
   },
   {
-    path: "/home",
-    element: <Home/>,
+    path: "/collection",
+    element: <ItemCollection/>,
   },
   
 ]);
