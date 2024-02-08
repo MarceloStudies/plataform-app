@@ -5,6 +5,7 @@ import Login from "./pages/Login";
 import ItemCollection from "./pages/ItemCollection";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import NavigationBar from './components/navbar/NavigationBar';
+import Home from "./pages/Home";
 
 
 const router = createBrowserRouter([
@@ -23,6 +24,10 @@ const router = createBrowserRouter([
   {
     path: "/collection",
     element: <ItemCollection/>,
+  },
+  {
+    path: "/home",
+    element: <Home/>,
   },
   
 ]);
