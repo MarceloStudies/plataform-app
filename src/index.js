@@ -37,7 +37,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(
     <html id="teste" className="dark"> 
     <body className="m-0 p-0 bg-slate-100 dark:bg-gray-900">
     <NavigationBar />
-    <RouterProvider router={router}	COLOR	CATEGORY	ACCESSORIES	AVAILABLE	PRICE />
+    <RouterProvider router={router}	/>
     </body>
     </html>
   </React.StrictMode>
