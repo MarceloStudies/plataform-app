@@ -1,8 +1,14 @@
 import CardCategoryFood from "../components/carroussel/CarrousselHorizontal";
 import TablesFoods from "../components/table/TablesFoods";
 import CardFoodInfo from "../components/card/CardFoodInfo";
+import ModalCardButtons from "../components/card/ModalCard";
+import Navbar from "../components/navbar/NavigationBar";
+import { useState } from "react";
+
 
 export default function ItemCollection() {
+  const [openModal, setOpenModal] = useState(false);
+
   return (
     <main className="flex w-full h-full justify-center px-4 lg:px-16 py-4 ">
       <div className="flex flex-col w-full  h-full  p-4 ">
@@ -17,6 +23,10 @@ export default function ItemCollection() {
             
         </div>
       </div>
+      <Navbar setOpenModal={setOpenModal} />
+      <ModalCardButtons openModal={openModal} setOpenModal={setOpenModal} />
+
+
     </main>
   );
 }
