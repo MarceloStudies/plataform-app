@@ -5,12 +5,13 @@ import Login from "./pages/Login";
 import ItemCollection from "./pages/ItemCollection";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Home from "./pages/Home";
+import Margon from "./pages/Margon";
 
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <div>Hello world!</div>,
+    element: <Margon/>
   },
   {
     path: "/login",
