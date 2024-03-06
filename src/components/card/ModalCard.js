@@ -27,9 +27,9 @@ export default function ModalCardButtons({ openModal, setOpenModal }) {
 
               <div>
                 <div className="flex items-center justify-end">
-                  <h3 className="text-lg font-medium leading-6 text-gray-900 dark:text-gray-200">
+                  {/* <h3 className="text-lg font-medium leading-6 text-gray-900 dark:text-gray-200">
                     {currentPath}
-                    </h3>
+                    </h3> */}
                   <button
                     onClick={() => setOpenModal(false)}
                     type="button"

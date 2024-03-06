@@ -19,7 +19,7 @@ export default function LoginCard() {
               </div>
               <div className="flex flex-col w-full gap-1">
                 <label for="emailLogin" className=" self-start ">
-                  Digite seu e-email:
+                  Digite sua senha:
                 </label>
                 <input
                   className="dark:bg-transparent w-full h-12 rounded-md border border-gray-400 focus:outline-none focus:border-secondary px-4"

@@ -19,12 +19,21 @@ export default function CarrousselHorizontal() {
         //   delay: 3000,
         //   disableOnInteraction: false,
         // }}
+        
         slidesPerView={8.5}
         spaceBetween={60}
-        pagination={{ clickable: true }}
+        pagination={{ clickable: false }}
         breakpoints={{
           320: {
-            slidesPerView: 2.2,
+            slidesPerView: 1.5,
+            spaceBetween: 20,
+            pagination: {
+              clickable: false,
+            },
+
+          },
+          480: {
+            slidesPerView: 2.5,
             spaceBetween: 20,
           },
           640: {
