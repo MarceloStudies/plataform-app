@@ -1,5 +1,11 @@
 import React from "react";
-import { Page, Text, View, StyleSheet } from "@react-pdf/renderer";
+import { Page, Text, View, StyleSheet, Font } from "@react-pdf/renderer";
+import ArialFont from "../../assets/fonts/arial/arial.ttf";
+
+Font.register({
+  family: "ArialFont",
+  src: ArialFont,
+});
 
 // Create styles
 const styles = StyleSheet.create({
@@ -11,26 +17,27 @@ const styles = StyleSheet.create({
     flexDirection: "column",
     justifyContent: "center",
     alignItems: "center",
-    fontFamily: "Arial",
+    fontFamily: "ArialFont",
   },
   title: {
-    fontSize: 24,
+    fontSize: 18,
     textAlign: "center",
-    fontFamily: "Arial",
-    fontWeight: "bold",
+    fontFamily: "ArialFont",
+    fontWeight: "extrabold",
     textTransform: "uppercase",
+    paddingLeft: 75,
   },
   text: {
-    margin: 10,
-    fontSize: 14,
-    textAlign: "justify",
-    fontFamily: "arial",
-  },
-  text2: {
-    margin: 10,
+    margin: 8,
     fontSize: 12,
     textAlign: "justify",
-    fontFamily: "arial",
+    fontFamily: "ArialFont",
+  },
+  text2: {
+    margin: 8,
+    fontSize: 10,
+    textAlign: "justify",
+    fontFamily: "ArialFont",
   },
   image: {
     marginVertical: 15,
@@ -41,7 +48,7 @@ const styles = StyleSheet.create({
     marginBottom: 20,
     textAlign: "center",
     color: "grey",
-    fontFamily: "AntonFamily",
+    fontFamily: "ArialFont",
   },
   pageNumber: {
     position: "absolute",
@@ -51,7 +58,7 @@ const styles = StyleSheet.create({
     right: 0,
     textAlign: "center",
     color: "grey",
-    fontFamily: "AntonFamily",
+    fontFamily: "ArialFont",
   },
 
   section: {
@@ -67,7 +74,11 @@ const styles = StyleSheet.create({
 // Create Document Component
 export default function PageContractComercial() {
   return (
-    <Page size="A4" style={styles.body}>
+    <Page
+      size="A4"
+      title="CONTRATO_LOCACAO_IMOVEL_COMERCIAL"
+      style={styles.body}
+    >
       <View style={styles.section}>
         <Text style={styles.title}>Contrato de Locação de Imovéis</Text>
         <Text style={styles.text}>
@@ -248,13 +259,21 @@ export default function PageContractComercial() {
         </Text>
 
         <Text style={styles.text}>
-          _________________________________________ PAULA VALERIA DOS SANTOS
-          BUENO (LOCADORA).
+          _________________________________________ PAULA V. DOS SANTOS BUENO
+          (LOCADORA).
         </Text>
 
         <Text style={styles.text}>
-        _________________________________________ MARCOS
-          ROBERTO MARIANO (LOCATÁRIO).
+          _________________________________________ MARCOS ROBERTO MARIANO
+          (LOCATÁRIO).
+        </Text>
+
+        <Text style={styles.text}>Testemunhas:</Text>
+        <Text style={styles.text}>
+          _________________________________________ (CPF)
+        </Text>
+        <Text style={styles.text}>
+          _________________________________________ (CPF)
         </Text>
       </View>
     </Page>

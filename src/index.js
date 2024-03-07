@@ -6,7 +6,7 @@ import ItemCollection from "./pages/ItemCollection";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Home from "./pages/Home";
 import Margon from "./pages/Margon";
-import MyDocument from "./pages/PDFGenerator";
+import PDFGeneratorContract from "./pages/PDFGenerator";
 
 
 const router = createBrowserRouter([
@@ -33,7 +33,7 @@ const router = createBrowserRouter([
 
   {
     path: "/pdf",
-    element: <MyDocument />,
+    element: <PDFGeneratorContract />,
   },
   
 ]);
