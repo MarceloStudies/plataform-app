@@ -35,6 +35,16 @@ const router = createBrowserRouter([
     path: "/pdf",
     element: <PDFGeneratorContract />,
   },
+
+  {
+    path: "/imogon",
+    element: <Login param="login" company="imogon"/>,
+  },
+
+  {
+    path: "/holyhouse",
+    element: <Login param="login" company="holyhouse"/>,
+  },
   
 ]);
 
