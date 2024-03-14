@@ -1,4 +1,19 @@
-export default function NavHomeButton() {
+export default function NavHomeButton({ company} ) {
+  let color;
+  switch (company) {
+    case "margon":
+      color = "green";
+      break;
+    case "imogon":
+      color = "teal";
+      break;
+    case "holyhouse":
+      color = "amber";
+      break;
+    default:
+      color = "gray";
+      break;
+  }
   return (
     <button
       data-tooltip-target="tooltip-home"
@@ -6,7 +21,8 @@ export default function NavHomeButton() {
       className="inline-flex flex-col items-center justify-center px-5 rounded-s-full lg:rounded-none  hover:lg:rounded-t-full  hover:bg-gray-50 dark:hover:bg-gray-800 group"
     >
       <svg
-        class="w-6 h-6 text-gray-800 dark:text-white"
+                className={`w-5 h-5 mb-1 text-gray-500 dark:text-gray-400 group-hover:text-${color}-600 dark:group-hover:text-${color}-500`}
+
         aria-hidden="true"
         xmlns="http://www.w3.org/2000/svg"
         fill="none"

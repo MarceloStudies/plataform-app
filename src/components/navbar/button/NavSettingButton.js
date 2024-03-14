@@ -1,4 +1,19 @@
-export default function NavSettingButton() {
+export default function NavSettingButton({ company }) {
+  let color;
+  switch (company) {
+    case "margon":
+      color = "green";
+      break;
+    case "imogon":
+      color = "teal";
+      break;
+    case "holyhouse":
+      color = "amber";
+      break;
+    default:
+      color = "gray";
+      break;
+  }
   function toggleTheme() {
     if (localStorage.theme === "dark") {
       localStorage.theme = "light";
@@ -16,7 +31,7 @@ export default function NavSettingButton() {
       onClick={toggleTheme}
     >
       <svg
-        className="w-5 h-5 mb-1 text-gray-500 dark:text-gray-400 group-hover:text-amber-600 dark:group-hover:text-amber-500"
+        className={`w-5 h-5 mb-1 text-gray-500 dark:text-gray-400 group-hover:text-${color}-600 dark:group-hover:text-${color}-500`}
         aria-hidden="true"
         xmlns="http://www.w3.org/2000/svg"
         fill="none"

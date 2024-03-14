@@ -37,6 +37,12 @@ const router = createBrowserRouter([
   },
 
   {
+    path: "/imogon/home",
+    element: <Home company="imogon" />,
+  },
+
+
+  {
     path: "/imogon",
     element: <Login param="login" company="imogon"/>,
   },
